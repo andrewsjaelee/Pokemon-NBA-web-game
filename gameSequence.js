@@ -8,11 +8,11 @@ const arenaBackground = new Sprite({
     image: arenaImage
 })
 
-let enemy
-let steph
+let enemy = new Character(characters.enemy)
+let steph = new Character(characters.steph)
 let renderedSprites
 let queue
-let gameAnimation
+let gameAnimation = window.requestAnimationFrame(animateGame)
 
 function startGame() {
     document.querySelector('#interface').style.display = 'block'
@@ -107,9 +107,9 @@ function animateGame() {
     })
 }
 
-animate()
-// startGame()
-// animateGame()
+// animate()
+startGame()
+animateGame()
 
 document.querySelector('#dialogue').addEventListener('click', (e) => {
     if (queue.length > 0) {

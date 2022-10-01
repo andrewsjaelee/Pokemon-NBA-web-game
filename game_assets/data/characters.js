@@ -18,7 +18,7 @@ const characters = {
             y: 160 
         },
         image: {
-            src: './game_assets/img/steph_better.png'
+            src: './game_assets/img/steph_better.png',
         },
         moving: true,
         name: 'Stephanie Biryani',

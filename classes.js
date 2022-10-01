@@ -34,9 +34,9 @@ class Sprite {
       0,
       this.image.width / this.frames.max,
       this.image.height,
-      this.image.position.x,
-      this.image.position.y,
-      this.image.image.width / this.frames.max,
+      this.position.x,
+      this.position.y,
+      this.image.width / this.frames.max,
       this.image.height
     );
     c.restore();
